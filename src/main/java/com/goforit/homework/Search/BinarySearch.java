@@ -1,4 +1,4 @@
-package com.goforit.homework;
+package com.goforit.homework.Search;
 
 /**
  * Created by junqingfjq on 15/11/22.
