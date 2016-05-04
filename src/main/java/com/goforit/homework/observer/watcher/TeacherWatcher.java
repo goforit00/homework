@@ -1,4 +1,4 @@
-package com.goforit.homework.watcher;
+package com.goforit.homework.observer.watcher;
 
 /**
  * Created by junqingfjq on 15/11/22.
