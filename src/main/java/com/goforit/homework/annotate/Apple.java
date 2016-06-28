@@ -2,6 +2,7 @@ package com.goforit.homework.annotate;
 
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
@@ -44,7 +45,13 @@ public class Apple {
     public static void main(String argv[]){
 
         try {
-            Field [] fields= Apple.class.getDeclaredFields();
+
+            Method [] methods=Class.forName(FruitColor.class.getName()).getDeclaredMethods();
+            for(Method m:methods){
+                System.err.println(m.getName());
+            }
+
+            Field[] fields= Apple.class.getDeclaredFields();
             Apple app=new Apple();
             System.err.println(app);
 

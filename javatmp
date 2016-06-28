@@ -1,0 +1,148 @@
+2016-05-18 22:59:22
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode):
+
+"Attach Listener" daemon prio=5 tid=0x00007fc78b802000 nid=0x300b waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" prio=5 tid=0x00007fc78b08a000 nid=0x1303 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-4" prio=5 tid=0x00007fc78c095000 nid=0x5303 in Object.wait() [0x0000000192bf3000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Object.wait(Object.java:503)
+	at com.goforit.homework.threadpool.Worker.run(Worker.java:29)
+	- locked <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-3" prio=5 tid=0x00007fc78c094800 nid=0x5103 in Object.wait() [0x0000000192af0000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Object.wait(Object.java:503)
+	at com.goforit.homework.threadpool.Worker.run(Worker.java:29)
+	- locked <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-2" prio=5 tid=0x00007fc78c093800 nid=0x4f03 in Object.wait() [0x00000001929ed000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Object.wait(Object.java:503)
+	at com.goforit.homework.threadpool.Worker.run(Worker.java:29)
+	- locked <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-1" prio=5 tid=0x00007fc78b893000 nid=0x4d03 in Object.wait() [0x00000001928ea000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Object.wait(Object.java:503)
+	at com.goforit.homework.threadpool.Worker.run(Worker.java:29)
+	- locked <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-0" prio=5 tid=0x00007fc78c09b000 nid=0x4b03 in Object.wait() [0x00000001927e7000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Object.wait(Object.java:503)
+	at com.goforit.homework.threadpool.Worker.run(Worker.java:29)
+	- locked <0x000000015f4502a0> (a java.util.LinkedList)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Monitor Ctrl-Break" daemon prio=5 tid=0x00007fc78a8d5800 nid=0x4903 runnable [0x0000000192686000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:398)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:530)
+	at java.net.ServerSocket.accept(ServerSocket.java:498)
+	at com.intellij.rt.execution.application.AppMain$1.run(AppMain.java:82)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" daemon prio=5 tid=0x00007fc78b055800 nid=0x4503 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" daemon prio=5 tid=0x00007fc78c019800 nid=0x4303 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" daemon prio=5 tid=0x00007fc78b806800 nid=0x4103 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" daemon prio=5 tid=0x00007fc78b00c000 nid=0x3417 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" daemon prio=5 tid=0x00007fc78b049800 nid=0x2d03 in Object.wait() [0x00000001904ad000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f204858> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	- locked <0x000000015f204858> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" daemon prio=5 tid=0x00007fc78b049000 nid=0x2b03 in Object.wait() [0x00000001903aa000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x000000015f204470> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+	- locked <0x000000015f204470> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" prio=5 tid=0x00007fc78c00e000 nid=0x2903 runnable 
+
+"GC task thread#0 (ParallelGC)" prio=5 tid=0x00007fc78b01a000 nid=0x2103 runnable 
+
+"GC task thread#1 (ParallelGC)" prio=5 tid=0x00007fc78b01b000 nid=0x2303 runnable 
+
+"GC task thread#2 (ParallelGC)" prio=5 tid=0x00007fc78b01b800 nid=0x2503 runnable 
+
+"GC task thread#3 (ParallelGC)" prio=5 tid=0x00007fc78b01c000 nid=0x2703 runnable 
+
+"VM Periodic Task Thread" prio=5 tid=0x00007fc78b807000 nid=0x4703 waiting on condition 
+
+JNI global references: 129
+

@@ -14,4 +14,5 @@ public @interface FruitColor {
     public enum Color{BULE,RED,GREEN};
 
     Color fruitColor() default Color.RED;
+
 }
